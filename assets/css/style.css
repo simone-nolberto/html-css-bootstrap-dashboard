@@ -32,3 +32,9 @@ nav{
     }
 }
 
+.to_do{
+    ul{
+        list-style: none;
+    }
+}
+
