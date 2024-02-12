@@ -5,6 +5,10 @@
 
 /* end utilities */
 
+nav{
+    height: 70px;
+}
+
 .logo img{
     height: 50px;
 }
