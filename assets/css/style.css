@@ -22,5 +22,10 @@ nav{
 
 .banner{
     background-color: var(--dash-primary);
+
+    & a{
+        color: white;
+        text-decoration: none;
+    }
 }
 
