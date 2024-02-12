@@ -16,8 +16,11 @@ nav{
 .sidebar{
     color: white;
     height: calc(100vh - 66px);
-    width: 100px;
     background-color: var(--dash-dark);
+
+    ul{
+        list-style: none;
+    }
 }
 
 .banner{

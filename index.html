@@ -51,11 +51,19 @@
         </nav>
     </header>
     <main class="d-flex">
-        <div class="sidebar">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe illo impedit perferendis rerum
-            reprehenderit? Consequuntur sunt explicabo est voluptas vero reiciendis impedit illo mollitia adipisci
-            dolorum nobis nulla obcaecati recusandae quod, minima quisquam voluptates esse eveniet tempore! Odit
-            corporis provident officiis non delectus a voluptatem blanditiis? Officiis aliquam perferendis nostrum?
+        <div class="sidebar d-flex flex-column justify-content-between align-items-center  p-4">
+            <ul>
+                <li><i class="fa-solid fa-house"><a class="collapse expand-lg" href="#">home</a></i>
+                </li>
+                <li><i class="fa-solid fa-chart-simple"><a class="collapse expand-lg" href="#">stats</a></i>
+                </li>
+                <li><i class="fa-solid fa-signal"><a class="collapse expand-lg" href="#">signals</a></i>
+                </li>
+            </ul>
+            <div>
+                <i class="fa-solid fa-gear"><a class="collapse expand-lg" href="#">admin</a></i>
+            </div>
+
         </div>
         <div class="main_screen d-flex flex-column">
             <div class="banner">
@@ -83,24 +91,158 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-lg-8">
-                            <div class="card next_class">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A qui
-                                iusto ex quisquam minus nam officiis odio est. Exercitationem autem rem dolorem aliquam
-                                error nostrum nulla quaerat eius distinctio delectus.</div>
-                            <div class="card faq">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex
-                                placeat enim hic eligendi excepturi necessitatibus amet facere ea unde alias harum
-                                repellendus, dicta non, ipsum natus? Quod, rem amet.</div>
+                            <div class="card">
+                                <div class="card-title">
+                                    <h2>Prossime classi</h2>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nome</th>
+                                            <th class="collapse expand-lg" scope="col">Data inizio</th>
+                                            <th class="collapse expand-lg" scope="col">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Classe 75</th>
+                                            <td class="collapse">15 Feb 2021</td>
+                                            <td class="collapse">20%</td>
+                                            <td>done</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 75</th>
+                                            <td class="collapse">15 Feb 2021</td>
+                                            <td class="collapse">20%</td>
+                                            <td>done</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 75</th>
+                                            <td class="collapse">15 Feb 2021</td>
+                                            <td class="collapse">20%</td>
+                                            <td>done</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 75</th>
+                                            <td class="collapse">15 Feb 2021</td>
+                                            <td class="collapse">20%</td>
+                                            <td>done</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 75</th>
+                                            <td class="collapse">15 Feb 2021</td>
+                                            <td class="collapse">20%</td>
+                                            <td>done</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 75</th>
+                                            <td class="collapse">15 Feb 2021</td>
+                                            <td class="collapse">20%</td>
+                                            <td>done</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 75</th>
+                                            <td class="collapse">15 Feb 2021</td>
+                                            <td class="collapse">20%</td>
+                                            <td>done</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 75</th>
+                                            <td class="collapse">15 Feb 2021</td>
+                                            <td class="collapse">20%</td>
+                                            <td>done</td>
+                                            <td></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card">
+                                <div class="card-title">
+                                    <h2>F.A.Q</h2>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Come posso aggiungere un nuovo studente?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Clicca sul + in alto nella sezione blu
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Clicca sull'icona della campanella
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Posso usare questa dashboard da mobile?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                                                dolore
+                                                praesentium perspiciatis inventore, cupiditate error necessitatibus odio
+                                                optio in aspernatur hic numquam pariatur. Cupiditate molestias numquam,
+                                                quaerat quam repellendus in!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12 col-lg-4">
-                            <div class="card to_do">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint
-                                maiores mollitia sapiente voluptatibus aperiam officia repellat eum natus iste rerum
-                                molestias amet magnam corporis nostrum, suscipit voluptatum odit omnis.</div>
-                            <div class="card graphic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                            <div class="card">
+                                <div class="card-title">
+                                    <h2>To-do</h2>
+                                </div>
+                                <ul>
+                                    <li>Kickoff nuove classi</li>
+                                    <li>Lezione su Bootstrap 5 in classe #75</li>
+                                    <li>Controllare username github studenti</li>
+                                </ul>
+                            </div>
+                            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                                 corrupti eum repellendus ad, omnis velit natus assumenda nemo. Recusandae praesentium
                                 hic, in temporibus perspiciatis dolor pariatur itaque officiis corrupti et?</div>
                         </div>
                     </div>
+
                 </div>
             </div>
+        </div>
         </div>
 
     </main>
