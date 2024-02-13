@@ -9,12 +9,15 @@
     <script src="https://kit.fontawesome.com/35c3fc4174.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid d-flex">
+            <div class="container-fluid">
                 <div class="logo">
                     <img class="navbar-collapse-lg" src="./assets/img/mobile-logo.png" alt="">
                     <!-- <img class="collapse navbar-collapse" src="./assets/img/logo.svg" alt=""> -->
@@ -51,24 +54,26 @@
         </nav>
     </header>
     <main class="d-flex">
-        <div class="sidebar d-flex flex-column justify-content-between align-items-center  p-4">
-            <ul>
-                <li><i class="fa-solid fa-house"><a class="collapse expand-lg" href="#">home</a></i>
+        <div class="sidebar d-flex flex-column justify-content-between align-items-center p-4">
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa-solid fa-house"></i></span><a class="expand-lg" href="#"> home</a>
                 </li>
-                <li><i class="fa-solid fa-chart-simple"><a class="collapse expand-lg" href="#">stats</a></i>
+                <li><span class="fa-li"><i class="fa-solid fa-chart-simple"></i></span><a class="expand-lg"
+                        href="#">stats</a>
                 </li>
-                <li><i class="fa-solid fa-signal"><a class="collapse expand-lg" href="#">signals</a></i>
+                <li><span class="fa-li"><i class="fa-solid fa-signal"></i></span><a class="expand-lg" href="#">
+                        signals</a>
                 </li>
             </ul>
             <div>
-                <i class="fa-solid fa-gear"><a class="collapse expand-lg" href="#">admin</a></i>
+                <span><i class="fa-solid fa-gear"></i></span><a class="expand-lg" href="#"> admin</a>
             </div>
 
         </div>
-        <div class="main_screen d-flex flex-column">
+        <div class="main_screen flex-column container-fluid">
             <div class="banner">
                 <div class="container-fluid">
-                    <div class="row d-flex flex-column flex-md-row">
+                    <div class="row d-flex flex-column flex-md-row align-items-center">
                         <div class="col-12 col-md-4 d-flex order-md-3 gap-4">
                             <h4>Nuovo studente</h4>
                             <button><i class="fa-solid fa-plus"></i></button>
@@ -253,9 +258,41 @@
                                 </div>
 
                             </div>
-                            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                                corrupti eum repellendus ad, omnis velit natus assumenda nemo. Recusandae praesentium
-                                hic, in temporibus perspiciatis dolor pariatur itaque officiis corrupti et?</div>
+                            <div class="card active_user"><canvas id="myChart"></canvas>
+                                <script>
+                                    var xValues = ["Never", "Every few hours", "Every hour", "Multiple times per hour", "Constantly"];
+                                    var yValues = [18, 49, 11, 13, 9];
+                                    var barColors = "blue";
+
+                                    new Chart("myChart", {
+                                        type: "bar",
+                                        data: {
+                                            labels: xValues,
+                                            datasets: [{
+                                                backgroundColor: barColors,
+                                                data: yValues
+                                            }]
+                                        },
+                                        options: {
+                                            legend: { display: false },
+                                            title: {
+                                                display: true,
+
+                                            }
+                                        }
+                                    });
+                                </script>
+                                <div class="card-title mt-4 border-bottom">
+                                    <h4>Utenti attivi</h4>
+                                    <h5>Lista degli utenti attivi in piattaforma nell'ultimo mese</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="border-bottom p-2">Gennaio: 1200</div>
+                                    <div class="border-bottom p-2">Febbraio: 800</div>
+                                    <div class="border-bottom p-2">Marzo:1500</div>
+                                    <a class="p-2" href="#">Visualizza report approfondito</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

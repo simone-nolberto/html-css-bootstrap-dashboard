@@ -5,9 +5,6 @@
 
 /* end utilities */
 
-nav{
-    height: 70px;
-}
 
 .logo img{
     height: 50px;
@@ -17,10 +14,6 @@ nav{
     color: white;
     height: calc(100vh - 66px);
     background-color: var(--dash-dark);
-
-    ul{
-        list-style: none;
-    }
 }
 
 .banner{
@@ -30,11 +23,11 @@ nav{
         color: white;
         text-decoration: none;
     }
-}
 
-.to_do{
-    ul{
-        list-style: none;
+    & button{
+        width: 50px;
+        aspect-ratio: 1;
     }
 }
+
 
