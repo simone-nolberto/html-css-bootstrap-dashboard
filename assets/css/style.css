@@ -24,10 +24,5 @@
         text-decoration: none;
     }
 
-    & button{
-        width: 50px;
-        aspect-ratio: 1;
-    }
 }
-
 
