@@ -62,36 +62,57 @@
     <div class="wrapper d-flex">
         <div class="sidebar d-flex flex-column justify-content-between p-4">
             <ul class="fa-ul">
-                <li><span class="fa-li"><i class="fa-solid fa-house"></i></span><a class="expand-lg" href="#"> home</a>
+                <li><span class="fa-li"><i class="fa-solid fa-house"></i></span><a class="d-none d-lg-inline " href="#">
+                        home</a>
                 </li>
-                <li><span class="fa-li"><i class="fa-solid fa-chart-simple"></i></span><a class="expand-lg"
+                <li><span class="fa-li"><i class="fa-solid fa-chart-simple"></i></span><a class="d-none d-lg-inline "
                         href="#">stats</a>
                 </li>
-                <li><span class="fa-li"><i class="fa-solid fa-signal"></i></span><a class="expand-lg" href="#">
+                <li><span class="fa-li"><i class="fa-solid fa-signal"></i></span><a class="d-none d-lg-inline "
+                        href="#">
                         signals</a>
                 </li>
             </ul>
-            <div>
-                <span><i class="fa-solid fa-gear"></i></span><a class="expand-lg" href="#"> admin</a>
-            </div>
+            <ul class="fa-ul">
+                <li>
+                    <span class="fa-li"><i class="fa-solid fa-gear"></i></span><a class="d-none d-lg-inline " href="#">
+                        admin</a>
+
+                </li>
+            </ul>
 
         </div>
-        <div class="main_screen flex-column container-fluid">
-            <div class="banner">
-                <div class="container-fluid">
+        <main class="flex-column container-fluid">
+            <div class="banner bg-primary">
+                <div class="container-fluid py-3">
                     <div class="row d-flex flex-column flex-md-row align-items-center">
                         <div class="col-12 col-md-4 d-flex order-md-3 gap-4">
                             <h4>Nuovo studente</h4>
-                            <button class="btn bg-white border" type="button" data-bs-toggle="offcanvas"
+                            <button class="btn bg-transparent border" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                 <i class="fa-solid fa-plus"></i>
                             </button>
                         </div>
                         <div class="col-12 col-md-4 order-md-1">
-                            <h4>Boolean</h4>
-                            <a href="#">Piano blaze</a>
-                            <a href="#">3 app</a>
-                            <a href="#"><i class="fa-solid fa-plus"></i></a>
+                            <div>
+                                <h4 class="d-inline">Boolean</h4>
+                                <span class="badge rounded-pill bg-primary-subtle"><a href="#">Piano blaze</a></span>
+                            </div>
+                            <div>
+                                <span class="badge rounded-pill bg-primary-subtle ">3 app</span>
+                                <span>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </span>
+                                <span class="d-lg-none badge rounded-pill bg-primary-subtle"><i
+                                        class="fa-solid fa-plus"></i></span>
+                                <span class="d-none d-lg-inline badge rounded-pill bg-primary-subtle ">Boolean mobile
+                                    app</span>
+                                <span class="d-none d-lg-inline badge rounded-pill bg-primary-subtle ">Boolean web
+                                    app</span>
+                                <span class="d-none d-lg-inline badge rounded-pill bg-primary-subtle ">Boolean blog
+                                    app</span>
+                            </div>
+
                         </div>
                         <div class="col-12 col-md-4 order-md-2">
                             <h4>Studenti online negli ultimi 30 minuti</h4>
@@ -178,68 +199,116 @@
                                         <thead>
                                             <tr>
                                                 <th scope="col">Nome</th>
-                                                <th class="collapse expand-lg" scope="col">Data inizio</th>
-                                                <th class="collapse expand-lg" scope="col">ROI</th>
+                                                <th class="d-none d-md-table-cell" scope="col">Data inizio</th>
+                                                <th class="d-none d-md-table-cell" scope="col">ROI</th>
                                                 <th scope="col">Stato</th>
                                                 <th scope="col">Azioni</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td class="collapse">15 Feb 2021</td>
-                                                <td class="collapse">20%</td>
-                                                <td>done</td>
-                                                <td></td>
+                                                <th scope="row"><img src="./assets/img/class-avatar.jpg" alt="">Classe
+                                                    75</th>
+                                                <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge text-bg-success">done</span></td>
+                                                <td>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td class="collapse">15 Feb 2021</td>
-                                                <td class="collapse">20%</td>
-                                                <td>done</td>
-                                                <td></td>
+                                                <th scope="row"><img src="./assets/img/class-avatar.jpg" alt="">Classe
+                                                    75</th>
+                                                <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge text-bg-success">done</span></td>
+                                                <td>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td class="collapse">15 Feb 2021</td>
-                                                <td class="collapse">20%</td>
-                                                <td>done</td>
-                                                <td></td>
+                                                <th scope="row"><img src="./assets/img/class-avatar.jpg" alt="">Classe
+                                                    75</th>
+                                                <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge text-bg-success">done</span></td>
+                                                <td>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td class="collapse">15 Feb 2021</td>
-                                                <td class="collapse">20%</td>
-                                                <td>done</td>
-                                                <td></td>
+                                                <th scope="row"><img src="./assets/img/class-avatar.jpg" alt="">Classe
+                                                    75</th>
+                                                <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge text-bg-success">done</span></td>
+                                                <td>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td class="collapse">15 Feb 2021</td>
-                                                <td class="collapse">20%</td>
-                                                <td>done</td>
-                                                <td></td>
+                                                <th scope="row"><img src="./assets/img/class-avatar.jpg" alt="">Classe
+                                                    75</th>
+                                                <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge text-bg-success">done</span></td>
+                                                <td>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td class="collapse">15 Feb 2021</td>
-                                                <td class="collapse">20%</td>
-                                                <td>done</td>
-                                                <td></td>
+                                                <th scope="row"><img src="./assets/img/class-avatar.jpg" alt="">Classe
+                                                    75</th>
+                                                <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge text-bg-success">done</span></td>
+                                                <td>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td class="collapse">15 Feb 2021</td>
-                                                <td class="collapse">20%</td>
-                                                <td>done</td>
-                                                <td></td>
+                                                <th scope="row"><img src="./assets/img/class-avatar.jpg" alt="">Classe
+                                                    75</th>
+                                                <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge text-bg-success">done</span></td>
+                                                <td>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td class="collapse">15 Feb 2021</td>
-                                                <td class="collapse">20%</td>
-                                                <td>done</td>
-                                                <td></td>
+                                                <th scope="row"><img src="./assets/img/class-avatar.jpg" alt="">Classe
+                                                    75</th>
+                                                <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge text-bg-success">done</span></td>
+                                                <td>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button class="bg-transparent"><i
+                                                            class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
 
                                         </tbody>
@@ -331,30 +400,10 @@
                                 </div>
 
                             </div>
-                            <div class="card active_user"><canvas id="myChart"></canvas>
-                                <script>
-                                    var xValues = ["Never", "Every few hours", "Every hour", "Multiple times per hour", "Constantly"];
-                                    var yValues = [18, 49, 11, 13, 9];
-                                    var barColors = "blue";
-
-                                    new Chart("myChart", {
-                                        type: "bar",
-                                        data: {
-                                            labels: xValues,
-                                            datasets: [{
-                                                backgroundColor: barColors,
-                                                data: yValues
-                                            }]
-                                        },
-                                        options: {
-                                            legend: { display: false },
-                                            title: {
-                                                display: true,
-
-                                            }
-                                        }
-                                    });
-                                </script>
+                            <div class="card active_user">
+                                <div>
+                                    <img class="w-100" src="./assets/img/stats.jpeg" alt="">
+                                </div>
                                 <div class="card-title mt-4 border-bottom">
                                     <h4>Utenti attivi</h4>
                                     <h5>Lista degli utenti attivi in piattaforma nell'ultimo mese</h5>
@@ -371,7 +420,7 @@
 
                 </div>
             </div>
-        </div>
+        </main>
     </div>
 
 

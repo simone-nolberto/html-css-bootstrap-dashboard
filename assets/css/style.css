@@ -1,28 +1,40 @@
-:root{
+:root {
     --dash-dark: rgba(19, 41, 63, 1);
     --dash-primary: rgba(27, 114, 232, 1);
 }
 
+
 /* end utilities */
 
+main{
+    height: 100vh;
+    overflow-y: auto;
+}
 
-.logo img{
+
+.logo img {
     height: 50px;
 }
 
-.sidebar{
+.sidebar {
     color: white;
     height: calc(100vh - 66px);
     background-color: var(--dash-dark);
+    background-image: url(../img/sidebar-bg.png);
 }
 
-.banner{
-    background-color: var(--dash-primary);
+.banner {
 
-    & a{
+    & a {
         color: white;
         text-decoration: none;
     }
 
 }
 
+
+.table img {
+    width: 40px;
+    aspect-ratio: 1;
+    margin-right: 0.5rem;
+}
