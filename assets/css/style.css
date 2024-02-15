@@ -6,8 +6,12 @@
 
 /* end utilities */
 
+body{
+    overflow: hidden;
+}
+
 main{
-    height: 100vh;
+    height: calc(100vh - 66px);
     overflow-y: auto;
 }
 
