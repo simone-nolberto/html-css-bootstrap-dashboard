@@ -25,6 +25,15 @@ main{
     height: calc(100vh - 66px);
     background-color: var(--dash-dark);
     background-image: url(../img/sidebar-bg.png);
+
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+
+    & li{
+        min-height: 24px;
+    }
 }
 
 .banner {
