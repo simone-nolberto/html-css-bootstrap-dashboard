@@ -46,6 +46,14 @@ main{
 }
 
 
+@media screen and (max-width: 992px) {
+    .myoffcanvas{
+        width: 100%;
+    }
+
+}
+
+
 .table img {
     width: 40px;
     aspect-ratio: 1;
